@@ -1,0 +1,136 @@
+{
+  "_version": "1.82.0",
+  "sap.app": {
+    "id": "zfctplhrmsportal",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.20.4",
+      "toolsId": "732eb396-2e23-4e17-aa9b-57cc374081fd"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/v2/northwind/northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "config": {
+      "fullWidth":true
+    },
+    "dependencies": {
+      "minUI5Version": "1.145.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "zfctplhrmsportal.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "zfctplhrmsportal.view",
+        "async": true,
+        "viewPath": "zfctplhrmsportal.view"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "App",
+          "target": "App"
+        },
+        {
+          "pattern": "",
+          "name": "Home",
+          "target": "Home"
+        },
+        {
+          "pattern": "View",
+          "name": "View",
+          "target": "View"
+        }
+      ],
+      "targets": {
+        "App": {
+          "viewName": "App",
+          "viewLevel": 0,
+          "viewType": "XML"
+        },
+        "Home": {
+          "viewName": "Home",
+          "viewLevel": 1,
+          "viewType": "XML"
+        },
+        "View": {
+          "viewName": "View",
+          "viewLevel": 2,
+          "viewType": "XML"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "zfctplhrmsportal.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

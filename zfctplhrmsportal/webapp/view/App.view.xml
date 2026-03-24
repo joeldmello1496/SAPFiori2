@@ -1,0 +1,66 @@
+<mvc:View controllerName="zfctplhrmsportal.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:tnt="sap.tnt">
+    <App id="app" initialPage="splitApp">
+        <SplitApp id="splitApp">
+            <masterPages>
+                <Page showHeader="true" title="Master Page" id="masterPage">
+                    <customHeader>
+                        <Bar>
+                            <contentLeft>
+                                <Image width="50px" id="SideBarHeaderLogo" src="{/svgLogo}"/>
+                            </contentLeft>
+
+                            <contentMiddle>
+                                <Text class="ClassTextBolder" id="SideBarHeaderCName" text="Castaliaz Technologies Pvt Ltd"/>
+                            </contentMiddle>
+
+                            <contentRight>
+                                <Button press="OnClick" tooltip="Expand/Collapse Side Bar" icon="sap-icon://menu2"/>
+                            </contentRight>
+                        </Bar>
+                    </customHeader>
+                    <content>
+                        <tnt:SideNavigation visible="true" width="330px" id="sideNavigation">
+                            <tnt:NavigationList width="330px" id="navigationList">
+                                <tnt:NavigationListItem id="idSelfService" visible="true" text="Self Service" select=".onSelfService" icon="sap-icon://home" expanded="false">
+                                    <tnt:NavigationListItem id="idView" visible="true" text="View" select="onSelectView" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idEdit" visible="true" text="Edit" select="onSelectEdit" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idSalary" visible="true" text="Salary" select="onSelectSalary" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idTaxation" visible="true" text="Taxation" select="onSelectTaxation" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idQuickInfo" visible="true" text="Quick Info" select="onSelectQuickInfo" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idWorkFlow" visible="true" text="Work Flow" select="onSelectWorkFlow" icon="" expanded="false"/>
+                                </tnt:NavigationListItem>
+                                <tnt:NavigationListItem id="idLeave" visible="true" text="Leave" select=".onLeave" icon="sap-icon://write-new-document" expanded="false">
+                                    <tnt:NavigationListItem id="idMyInfo" visible="true" text="My Info" select="onSelectMyInfo" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idLeavePlanner" visible="true" text="Leave Planner" select="onSelectLeavePlanner" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idApplyLeave" visible="true" text="Apply Leave" select="onSelectApplyLeave" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idOutdoorDuty" visible="true" text="Outdoor Duty" select="onSelectOutdoorDuty" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idCompOff" visible="true" text="Comp Off" select="onSelectCompOff" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idLeaveAdjustment" visible="true" text="Leave Adjustment" select="onSelectLeaveAdjustment" icon="" expanded="false"/>
+                                </tnt:NavigationListItem>
+                                <tnt:NavigationListItem id="idTime" visible="true" text="Time" select=".onTime" icon="sap-icon://customer-history" expanded="false">
+                                    <tnt:NavigationListItem id="idAttendance" visible="true" text="Attendance" select="onSelectAttendance" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idSwipe" visible="true" text="Swipe" select="onSelectSwipe" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idShortTimeOff" visible="true" text="Short Time Off" select="onSelectShortTimeOff" icon="" expanded="false"/>
+                                </tnt:NavigationListItem>
+                                <tnt:NavigationListItem id="idClaims" visible="true" text="Claims" select=".OnNavBtn" icon="sap-icon://high-priority" expanded="false">
+                                    <tnt:NavigationListItem id="idExpense" visible="true" text="Expense" select="onSelectExpense" icon="" expanded="false"/>
+                                </tnt:NavigationListItem>
+                                <tnt:NavigationListItem id="idRecruitment" visible="true" text="Recruitment" select=".OnNavBtn" icon="sap-icon://employee-lookup" expanded="false">
+                                    <tnt:NavigationListItem id="idRecruit" visible="true" text="Recruit" select="onRecruit" icon="" expanded="false"/>
+                                </tnt:NavigationListItem>
+                            </tnt:NavigationList>
+                        </tnt:SideNavigation>
+                    </content>
+                </Page>
+            </masterPages>
+            <detailPages>
+                 <mvc:XMLView viewName="zfctplhrmsportal.view.Home" />
+            </detailPages>
+        </SplitApp>
+    </App>
+</mvc:View>

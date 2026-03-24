@@ -1,0 +1,218 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Start zfcastaliazprolifics",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zfcastaliazprolifics",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zfcastaliazprolifics\"}"
+      }
+    },
+    {
+      "name": "Start zfcastaliazprolifics Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zfcastaliazprolifics",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zfcastaliazprolifics\"}"
+      }
+    },
+    {
+      "name": "Start zflistreport",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zflistreport",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zflistreport\"}"
+      }
+    },
+    {
+      "name": "Start zflistreport Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zflistreport",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zflistreport\"}"
+      }
+    },
+    {
+      "name": "Start zflistreport Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zflistreport",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zflistreport\"}"
+      }
+    },
+    {
+      "name": "Start zfctplhrmsportal",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zfctplhrmsportal",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zfctplhrmsportal\"}"
+      }
+    },
+    {
+      "name": "Start zfctplhrmsportal Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zfctplhrmsportal",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zfctplhrmsportal\"}"
+      }
+    },
+    {
+      "name": "Start zfctplhrmsportal Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/zfctplhrmsportal",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flp.html#app-preview"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/zfctplhrmsportal\"}"
+      }
+    }
+  ]
+}
