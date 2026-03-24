@@ -53,6 +53,9 @@
                                 <tnt:NavigationListItem id="idRecruitment" visible="true" text="Recruitment" select=".OnNavBtn" icon="sap-icon://employee-lookup" expanded="false">
                                     <tnt:NavigationListItem id="idRecruit" visible="true" text="Recruit" select="onRecruit" icon="" expanded="false"/>
                                 </tnt:NavigationListItem>
+                                <tnt:NavigationListItem id="idRecruitment2" visible="true" text="Recruitment2" select=".OnNavBtn2" icon="sap-icon://employee-lookup" expanded="false">
+                                    <tnt:NavigationListItem id="idRecruit2" visible="true" text="Recruit2" select="onRecruit2" icon="" expanded="false"/>
+                                </tnt:NavigationListItem>
                             </tnt:NavigationList>
                         </tnt:SideNavigation>
                     </content>
