@@ -106,6 +106,86 @@
           "pattern": "View",
           "name": "View",
           "target": "View"
+        },
+        {
+          "pattern": "Edit",
+          "name": "Edit",
+          "target": "Edit"
+        },
+        {
+          "pattern": "Salary",
+          "name": "Salary",
+          "target": "Salary"
+        },
+        {
+          "pattern": "Taxation",
+          "name": "Taxation",
+          "target": "Taxation"
+        },
+        {
+          "pattern": "QuickInfo",
+          "name": "QuickInfo",
+          "target": "QuickInfo"
+        },
+        {
+          "pattern": "WorkFlow",
+          "name": "WorkFlow",
+          "target": "WorkFlow"
+        },
+        {
+          "pattern": "MyInfo",
+          "name": "MyInfo",
+          "target": "MyInfo"
+        },
+        {
+          "pattern": "LeavePlanner",
+          "name": "LeavePlanner",
+          "target": "LeavePlanner"
+        },
+        {
+          "pattern": "ApplyLeave",
+          "name": "ApplyLeave",
+          "target": "ApplyLeave"
+        },
+        {
+          "pattern": "OutdoorDuty",
+          "name": "OutdoorDuty",
+          "target": "OutdoorDuty"
+        },
+        {
+          "pattern": "CompOff",
+          "name": "CompOff",
+          "target": "CompOff"
+        },
+        {
+          "pattern": "LeaveAdjustment",
+          "name": "LeaveAdjustment",
+          "target": "LeaveAdjustment"
+        },
+        {
+          "pattern": "Attendance",
+          "name": "Attendance",
+          "target": "Attendance"
+        },
+        {
+          "pattern": "Swipe",
+          "name": "Swipe",
+          "target": "Swipe"
+        },
+        {
+          "pattern": "ShortTimeOff",
+          "name": "ShortTimeOff",
+          "target": "ShortTimeOff"
+        },
+        {
+          "pattern": "Expense",
+          "name": "Expense",
+          "target": "Expense"
+        },
+        {
+          "pattern": "Recruit",
+          "name": "Recruit",
+          "target": "Recruit"
         }
       ],
       "targets": {
@@ -120,8 +200,88 @@
           "viewType": "XML"
         },
         "View": {
-          "viewName": "View",
+          "viewName": "Selfservice/View/View",
           "viewLevel": 2,
+          "viewType": "XML"
+        },
+        "Edit":{
+          "viewName": "Selfservice/Edit/Edit",
+          "viewLevel": 3,
+          "viewType": "XML"
+        },
+        "Salary":{
+          "viewName": "Selfservice/Salary/Salary",
+          "viewLevel": 4,
+          "viewType": "XML"
+        },
+        "Taxation":{
+          "viewName": "Selfservice/Taxation/Taxation",
+          "viewLevel": 5,
+          "viewType": "XML"
+        },
+        "QuickInfo":{
+          "viewName": "Selfservice/QuickInfo/QuickInfo",
+          "viewLevel": 6,
+          "viewType": "XML"
+        },
+        "WorkFlow":{
+          "viewName": "Selfservice/WorkFlow/WorkFlow",
+          "viewLevel": 7,
+          "viewType": "XML"
+        },
+        "MyInfo":{
+          "viewName": "Leave/MyInfo/MyInfo",
+          "viewLevel": 8,
+          "viewType": "XML"
+        },
+        "LeavePlanner":{
+          "viewName": "Leave/LeavePlanner/LeavePlanner",
+          "viewLevel": 9,
+          "viewType": "XML"
+        },
+        "ApplyLeave":{
+          "viewName": "Leave/ApplyLeave/ApplyLeave",
+          "viewLevel": 10,
+          "viewType": "XML"
+        },
+        "OutdoorDuty":{
+          "viewName": "Leave/OutDoorDuty/OutDoorDuty",
+          "viewLevel": 11,
+          "viewType": "XML"
+        },
+        "CompOff":{
+          "viewName": "Leave/CompOff/CompOff",
+          "viewLevel": 12,
+          "viewType": "XML"
+        },
+        "LeaveAdjustment":{
+          "viewName": "Leave/LeaveAdjustment/LeaveAdjustment",
+          "viewLevel": 13,
+          "viewType": "XML"
+        },
+        "Attendance":{
+          "viewName": "Time/Attendance/Attendance",
+          "viewLevel": 14,
+          "viewType": "XML"
+        },
+        "Swipe":{
+          "viewName": "Time/Swipe/Swipe",
+          "viewLevel": 15,
+          "viewType": "XML"
+        },
+        "ShortTimeOff":{
+          "viewName": "Time/ShortTimeOff/ShortTimeOff",
+          "viewLevel": 16,
+          "viewType": "XML"
+        },
+        "Expense":{
+          "viewName": "Claims/Expense/Expense",
+          "viewLevel": 17,
+          "viewType": "XML"
+        },
+        "Recruit":{
+          "viewName": "Recruitment/Recruit/Recruit",
+          "viewLevel": 18,
           "viewType": "XML"
         }
       }

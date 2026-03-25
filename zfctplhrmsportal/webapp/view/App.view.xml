@@ -26,32 +26,32 @@
                     <content>
                         <tnt:SideNavigation visible="true" width="330px" id="sideNavigation">
                             <tnt:NavigationList width="330px" id="navigationList">
-                                <tnt:NavigationListItem id="idSelfService" visible="true" text="Self Service" select=".onSelfService" icon="sap-icon://home" expanded="false">
-                                    <tnt:NavigationListItem id="idView" visible="true" text="View" select="onSelectView" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idEdit" visible="true" text="Edit" select="onSelectEdit" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idSalary" visible="true" text="Salary" select="onSelectSalary" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idTaxation" visible="true" text="Taxation" select="onSelectTaxation" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idQuickInfo" visible="true" text="Quick Info" select="onSelectQuickInfo" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idWorkFlow" visible="true" text="Work Flow" select="onSelectWorkFlow" icon="" expanded="false"/>
+                                <tnt:NavigationListItem id="idSelfService" visible="true" text="Self Service" select=".OnExpandItems" icon="sap-icon://home" expanded="false">
+                                    <tnt:NavigationListItem id="idView" visible="true" key="Selfservice.View.View" text="View" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idEdit" visible="true" key="Selfservice.Edit.Edit" text="Edit" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idSalary" visible="true" key="Selfservice.Salary.Salary" text="Salary" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idTaxation" visible="true" key="Selfservice.Taxation.Taxation" text="Taxation" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idQuickInfo" visible="true" key="Selfservice.QuickInfo.QuickInfo" text="Quick Info" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idWorkFlow" visible="true" key="Selfservice.WorkFlow.WorkFlow" text="Work Flow" select=".OnNavBtn" icon="" expanded="false"/>
                                 </tnt:NavigationListItem>
-                                <tnt:NavigationListItem id="idLeave" visible="true" text="Leave" select=".onLeave" icon="sap-icon://write-new-document" expanded="false">
-                                    <tnt:NavigationListItem id="idMyInfo" visible="true" text="My Info" select="onSelectMyInfo" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idLeavePlanner" visible="true" text="Leave Planner" select="onSelectLeavePlanner" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idApplyLeave" visible="true" text="Apply Leave" select="onSelectApplyLeave" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idOutdoorDuty" visible="true" text="Outdoor Duty" select="onSelectOutdoorDuty" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idCompOff" visible="true" text="Comp Off" select="onSelectCompOff" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idLeaveAdjustment" visible="true" text="Leave Adjustment" select="onSelectLeaveAdjustment" icon="" expanded="false"/>
+                                <tnt:NavigationListItem id="idLeave" visible="true" text="Leave" select=".OnExpandItems" icon="sap-icon://write-new-document" expanded="false">
+                                    <tnt:NavigationListItem id="idMyInfo" visible="true" key="Leave.MyInfo.MyInfo" text="My Info" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idLeavePlanner" visible="true" key="Leave.LeavePlanner.LeavePlanner" text="Leave Planner" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idApplyLeave" visible="true" key="Leave.ApplyLeave.ApplyLeave" text="Apply Leave" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idOutDoorDuty" visible="true" key="Leave.OutDoorDuty.OutDoorDuty" text="Out Door Duty" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idCompOff" visible="true" key="Leave.CompOff.CompOff" text="Comp Off" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idLeaveAdjustment" key="Leave.LeaveAdjustment.LeaveAdjustment" visible="true" text="Leave Adjustment" select=".OnNavBtn" icon="" expanded="false"/>
                                 </tnt:NavigationListItem>
-                                <tnt:NavigationListItem id="idTime" visible="true" text="Time" select=".onTime" icon="sap-icon://customer-history" expanded="false">
-                                    <tnt:NavigationListItem id="idAttendance" visible="true" text="Attendance" select="onSelectAttendance" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idSwipe" visible="true" text="Swipe" select="onSelectSwipe" icon="" expanded="false"/>
-                                    <tnt:NavigationListItem id="idShortTimeOff" visible="true" text="Short Time Off" select="onSelectShortTimeOff" icon="" expanded="false"/>
+                                <tnt:NavigationListItem id="idTime" visible="true" text="Time" select=".OnExpandItems" icon="sap-icon://customer-history" expanded="false">
+                                    <tnt:NavigationListItem id="idAttendance" key="Time.Attendance.Attendance" visible="true" text="Attendance" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idSwipe" key="Time.Swipe.Swipe" visible="true" text="Swipe" select=".OnNavBtn" icon="" expanded="false"/>
+                                    <tnt:NavigationListItem id="idShortTimeOff" key="Time.ShortTimeOff.ShortTimeOff" visible="true" text="Short Time Off" select=".OnNavBtn" icon="" expanded="false"/>
                                 </tnt:NavigationListItem>
-                                <tnt:NavigationListItem id="idClaims" visible="true" text="Claims" select=".OnNavBtn" icon="sap-icon://high-priority" expanded="false">
-                                    <tnt:NavigationListItem id="idExpense" visible="true" text="Expense" select="onSelectExpense" icon="" expanded="false"/>
+                                <tnt:NavigationListItem id="idClaims" visible="true" text="Claims" select=".OnExpandItems" icon="sap-icon://high-priority" expanded="false">
+                                    <tnt:NavigationListItem id="idExpense" visible="true" key="Claims.Expense.Expense" text="Expense" select=".OnNavBtn" icon="" expanded="false"/>
                                 </tnt:NavigationListItem>
-                                <tnt:NavigationListItem id="idRecruitment" visible="true" text="Recruitment" select=".OnNavBtn" icon="sap-icon://employee-lookup" expanded="false">
-                                    <tnt:NavigationListItem id="idRecruit" visible="true" text="Recruit" select="onRecruit" icon="" expanded="false"/>
+                                <tnt:NavigationListItem id="idRecruitment" visible="true" text="Recruitment" select=".OnExpandItems" icon="sap-icon://employee-lookup" expanded="false">
+                                    <tnt:NavigationListItem id="idRecruit" visible="true" key="Recruitment.Recruit.Recruit" text="Recruit" select=".OnNavBtn" icon="" expanded="false"/>
                                 </tnt:NavigationListItem>
                             </tnt:NavigationList>
                         </tnt:SideNavigation>
