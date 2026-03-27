@@ -75,7 +75,6 @@ sap.ui.define(
           oSplitApp.getAggregation("_navMaster").addStyleClass("masterStyle");
           this.getView().byId("SideBarHeaderLogo").setVisible(false);
           this.getView().byId("SideBarHeaderCName").setVisible(false);
-          this.byId("navigationList").setWidth("0px");
         }
 
         else if (bExpanded === false) {
@@ -84,8 +83,6 @@ sap.ui.define(
           oSplitApp.getAggregation("_navMaster").removeStyleClass("masterStyle");
           this.getView().byId("SideBarHeaderLogo").setVisible(true);
           this.getView().byId("SideBarHeaderCName").setVisible(true);
-          this.byId("navigationList").setWidth("330px");
-
         }
 
         oSideNavigation.setExpanded(!bExpanded);
