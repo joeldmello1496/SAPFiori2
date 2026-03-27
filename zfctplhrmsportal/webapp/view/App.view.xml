@@ -5,27 +5,27 @@
     xmlns="sap.m"
     xmlns:tnt="sap.tnt">
     <App id="app" initialPage="splitApp">
-        <SplitApp id="splitApp">
-            <masterPages>
-                <Page showHeader="true" title="Master Page" id="masterPage">
+        <SplitApp id="splitApp"  >
+            <masterPages     >
+                <Page showHeader="true" title="Master Page" id="masterPage"  >
                     <customHeader>
                         <Bar>
                             <contentLeft>
-                                <Image width="50px" id="SideBarHeaderLogo" src="{/svgLogo}"/>
+                                <Image width="50px" id="SideBarHeaderLogo" src="{/svgLogo}" tooltip="Castaliaz Technologies Pvt Ltd"  />
                             </contentLeft>
 
                             <contentMiddle>
                                 <Text class="ClassTextBolder" id="SideBarHeaderCName" text="Castaliaz Technologies Pvt Ltd"/>
+                                <Button press="OnClick" tooltip="Expand/Collapse Side Bar" icon="sap-icon://menu2"/>
                             </contentMiddle>
 
-                            <contentRight>
-                                <Button press="OnClick" tooltip="Expand/Collapse Side Bar" icon="sap-icon://menu2"/>
-                            </contentRight>
+                            
+                            
                         </Bar>
                     </customHeader>
                     <content>
-                        <tnt:SideNavigation visible="true" width="330px" id="sideNavigation">
-                            <tnt:NavigationList width="330px" id="navigationList">
+                        <tnt:SideNavigation visible="true" width="330px"  id="sideNavigation">
+                            <tnt:NavigationList  id="navigationList" >
                                 <tnt:NavigationListItem id="idSelfService" visible="true" text="Self Service" select=".OnExpandItems" icon="sap-icon://home" expanded="false">
                                     <tnt:NavigationListItem id="idView" visible="true" key="Selfservice.View.View" text="View" select=".OnNavBtn" icon="" expanded="false"/>
                                     <tnt:NavigationListItem id="idEdit" visible="true" key="Selfservice.Edit.Edit" text="Edit" select=".OnNavBtn" icon="" expanded="false"/>
